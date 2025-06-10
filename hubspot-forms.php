@@ -35,7 +35,7 @@ function hubspot_form_shortcode($atts) {
     $container_id = 'hubspot-form-' . uniqid();
 
     // Create the form container and script
-    $output = '<div id="' . esc_attr($container_id) . '" class="contact-us-form-shortcode">';
+    $output = '<div id="' . esc_attr($container_id) . '" class="simple-hubspot-form">';
     $output .= '<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>';
     $output .= '<script>
         hbspt.forms.create({
