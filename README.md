@@ -25,9 +25,9 @@ Use the shortcode `[hubspot]` in your posts or pages to embed a HubSpot form. Th
 
 ### Finding Your Form and Portal IDs
 
-1. In HubSpot, navigate to Marketing → Lead Capture → Forms
-2. Select your form
-3. Click the "Share" button
+1. In HubSpot, navigate to Marketing → Forms
+2. Find your form, but don't click on it
+3. Click the "Actions" button
 4. In the embed code, you'll find both your Portal ID and Form ID
 
 ## Features
