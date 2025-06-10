@@ -37,6 +37,9 @@ Use the shortcode `[hubspot]` in your posts or pages to embed a HubSpot form. Th
 - Unique container IDs for multiple forms on the same page
 - Secure output with WordPress escaping functions
 
+## Styling
+- The forms are wrapped in a `simple-hubspot-form` class. If you're using legacy forms in HubSpot, you can use this class to style your forms. If using HubSpot's new editor, you'll have to style your forms in HubSpot.
+
 ## Requirements
 
 - WordPress 4.0 or higher
