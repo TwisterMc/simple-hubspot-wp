@@ -11,7 +11,7 @@
  * Plugin Name:       Simple HubSpot Forms Integration
  * Plugin URI:        https://github.com/TwisterMc/simple-hubspot-wp
  * Description:       Adds a shortcode to embed HubSpot forms on your WordPress site.
- * Version:           0.1.0
+ * Version:           1.0.0
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            Thomas McMahon
