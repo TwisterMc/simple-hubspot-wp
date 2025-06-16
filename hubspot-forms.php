@@ -40,13 +40,22 @@ function hubspot_form_shortcode($atts) {
         'hubspot'
     );
 
-    // If no form ID is provided, return an error message
-    if (empty($atts['id'])) {
-        return 'Error: HubSpot form ID is required.';
-    }
+        // Validate required parameters
+        if (empty($atts['id']) || empty($atts['portal'])) {
+            return esc_html__('Error: HubSpot form ID and portal ID are required.', 'hubspot-forms');
+        }
+
+        // Validate form ID and portal ID format
+        if (!preg_match('/^[a-zA-Z0-9\-]+$/', $atts['id'])) {
+            return esc_html__('Error: Invalid form ID format.', 'hubspot-forms');
+        }
+
+        if (!preg_match('/^[0-9]+$/', $atts['portal'])) {
+            return esc_html__('Error: Invalid portal ID format.', 'hubspot-forms');
+        }
 
     // Generate a unique container ID for this form instance
-    $container_id = 'hubspot-form-' . uniqid();
+    $container_id = 'hubspot-form-' . wp_rand();
 
     // Create the form container and script
     $output = '<div id="' . esc_attr($container_id) . '" class="simple-hubspot-form">';
