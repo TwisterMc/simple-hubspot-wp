@@ -1,10 +1,24 @@
 <?php
 /**
- * Plugin Name: Simple HubSpot Forms Integration
- * Description: Adds a shortcode to embed HubSpot forms on your WordPress site.
- * Version: 0.1.0
- * Author: Thomas McMahon
- * License: GPL v2 or later
+ * Simple HubSpot Forms Integration
+ *
+ * @package           SimpleHubSpotForms
+ * @author            Thomas McMahon
+ * @copyright         2025 Thomas McMahon
+ * @license           GPL-2.0-or-later
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Simple HubSpot Forms Integration
+ * Plugin URI:        https://github.com/TwisterMc/simple-hubspot-wp
+ * Description:       Adds a shortcode to embed HubSpot forms on your WordPress site.
+ * Version:           0.1.0
+ * Requires at least: 5.8
+ * Requires PHP:      7.4
+ * Author:            Thomas McMahon
+ * Author URI:        https://www.twistermc.com
+ * Text Domain:       hubspot-forms
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 // Prevent direct access to this file
